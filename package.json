@@ -1,0 +1,25 @@
+{
+  "name": "turnip-text",
+  "displayName": "turnip_text",
+  "description": "Syntax highlighting and embedded-Python support for turnip_text files.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.78.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "turniptext",
+      "aliases": ["turnip_text", "turniptext"],
+      "extensions": [".ttext"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "turniptext",
+      "scopeName": "source.turniptext",
+      "path": "./syntaxes/turniptext.tmLanguage.json"
+    }]
+  }
+}
