@@ -3,7 +3,7 @@
 	"name": "turnip_text",
 	"patterns": [
 		{
-			"begin": "(?<![}#])#+(?![{#])",
+			"begin": "(?<![}#\\\\])#+(?![{#])",
 			"beginCaptures": {
 				"0": {
 					"name": "punctuation.definition.comment.python"
@@ -13,13 +13,13 @@
 			"name": "comment.line.number-sign.python"
 		},
 		{
-			"begin": "\\[",
-			"end": "\\]",
+			"begin": "(?<!\\\\)(\\[)",
+			"end": "(?<!\\\\)(\\])",
 			"beginCaptures": {
-				"0": { "name": "punctuation.code.open" }
+				"2": { "name": "punctuation.code.open" }
 			},
 			"endCaptures": {
-				"0": { "name": "punctuation.code.close" }
+				"2": { "name": "punctuation.code.close" }
 			},
 			"name": "meta.embedded.block.python",
 			"patterns": [ { "include": "source.python" } ]
