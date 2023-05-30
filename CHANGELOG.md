@@ -6,6 +6,15 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
-- Initial release v0.0.1
-    - Basic highlighting for comments (doesn't support raw scope syntax)
-    - Embedded python highlighting
+## [0.0.1] - 2023-05-30
+
+### Added
+
+- Basic highlighting for comments (doesn't support raw scope syntax)
+- Embedded python highlighting
+
+## [0.0.2] - 2023-05-30
+
+- Fix bug where hashes in raw scope open/close would be highlighted as comments
+- Fix bug where escaped hashes would be highlighted as comments
+- Fix bug where Python highlighting would trigger inside escaped square brackets
