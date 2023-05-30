@@ -3,9 +3,9 @@
 	"name": "turnip_text",
 	"patterns": [
 		{
-			"begin": "(?<![}#\\\\])#+(?![{#])",
+			"begin": "(?<![}#\\\\])(#+)(?![{#])",
 			"beginCaptures": {
-				"0": {
+				"1": {
 					"name": "punctuation.definition.comment.python"
 				}
 			},
@@ -16,10 +16,10 @@
 			"begin": "(?<!\\\\)(\\[)",
 			"end": "(?<!\\\\)(\\])",
 			"beginCaptures": {
-				"2": { "name": "punctuation.code.open" }
+				"1": { "name": "punctuation.code.open" }
 			},
 			"endCaptures": {
-				"2": { "name": "punctuation.code.close" }
+				"1": { "name": "punctuation.code.close" }
 			},
 			"name": "meta.embedded.block.python",
 			"patterns": [ { "include": "source.python" } ]
