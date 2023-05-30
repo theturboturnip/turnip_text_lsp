@@ -2,6 +2,10 @@
   "name": "turnip-text",
   "displayName": "turnip_text",
   "description": "Syntax highlighting and embedded-Python support for turnip_text files.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/theturboturnip/turnip_text_vsix.git"
+  },
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.78.0"
