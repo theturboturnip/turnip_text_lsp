@@ -3,30 +3,38 @@
 	"name": "turnip_text",
 	"patterns": [
 		{
-			"include": "#keywords"
-		},
-		{
-			"include": "#strings"
-		}
-	],
-	"repository": {
-		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.turniptext",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
-		},
-		"strings": {
-			"name": "string.quoted.double.turniptext",
-			"begin": "\"",
-			"end": "\"",
+			"begin": "(^[ \\t]+)?(?=#)",
+			"beginCaptures": {
+				"1": {
+					"name": "punctuation.whitespace.comment.leading.python"
+				}
+			},
+			"end": "(?!\\G)",
 			"patterns": [
 				{
-					"name": "constant.character.escape.turniptext",
-					"match": "\\\\."
+					"begin": "#",
+					"beginCaptures": {
+						"0": {
+							"name": "punctuation.definition.comment.python"
+						}
+					},
+					"end": "\\n",
+					"name": "comment.line.number-sign.python"
 				}
 			]
+		},
+		{
+			"begin": "\\[",
+			"end": "\\]",
+			"beginCaptures": {
+				"0": { "name": "punctuation.code.open" }
+			},
+			"endCaptures": {
+				"0": { "name": "punctuation.code.close" }
+			},
+			"name": "meta.embedded.block.python",
+			"patterns": [ { "include": "source.python" } ]
 		}
-	},
+	],
 	"scopeName": "source.turniptext"
 }

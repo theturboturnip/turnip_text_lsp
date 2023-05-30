@@ -19,7 +19,10 @@
     "grammars": [{
       "language": "turniptext",
       "scopeName": "source.turniptext",
-      "path": "./syntaxes/turniptext.tmLanguage.json"
+      "path": "./syntaxes/turniptext.tmLanguage.json",
+      "embeddedLanguages": {
+        "meta.embedded.block.python": "python"
+      }
     }]
   }
 }
