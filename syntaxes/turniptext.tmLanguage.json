@@ -3,6 +3,11 @@
 	"name": "turnip_text",
 	"patterns": [
 		{
+			"begin": "(?<![}#\\\\])#+{",
+			"end": "(?<!\\\\)}#+",
+			"name": "markup.raw"
+		},
+		{
 			"begin": "(?<![}#\\\\])(#+)(?![{#])",
 			"beginCaptures": {
 				"1": {

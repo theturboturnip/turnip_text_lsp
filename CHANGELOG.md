@@ -18,3 +18,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - Fix bug where hashes in raw scope open/close would be highlighted as comments
 - Fix bug where escaped hashes would be highlighted as comments
 - Fix bug where Python highlighting would trigger inside escaped square brackets
+
+## [0.0.3] - 2023-07-03
+
+- Add rule for raw text highlighting
