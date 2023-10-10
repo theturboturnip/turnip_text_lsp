@@ -5,7 +5,7 @@
 		{
 			"begin": "(?<![}#\\\\])#+{",
 			"end": "(?<!\\\\)}#+",
-			"name": "markup.raw"
+			"name": "string.unquoted.double.python"
 		},
 		{
 			"begin": "(?<![}#\\\\])(#+)(?![{#])",
@@ -21,13 +21,21 @@
 			"begin": "(?<!\\\\)(\\[)",
 			"end": "(?<!\\\\)(\\])",
 			"beginCaptures": {
-				"1": { "name": "punctuation.code.open" }
+				"1": {
+					"name": "punctuation.code.open"
+				}
 			},
 			"endCaptures": {
-				"1": { "name": "punctuation.code.close" }
+				"1": {
+					"name": "punctuation.code.close"
+				}
 			},
 			"name": "meta.embedded.block.python",
-			"patterns": [ { "include": "source.python" } ]
+			"patterns": [
+				{
+					"include": "source.python"
+				}
+			]
 		}
 	],
 	"scopeName": "source.turniptext"

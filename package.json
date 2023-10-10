@@ -6,7 +6,7 @@
     "type": "git",
     "url": "https://github.com/theturboturnip/turnip_text_vsix.git"
   },
-  "version": "0.0.3",
+  "version": "0.0.4",
   "engines": {
     "vscode": "^1.78.0"
   },
@@ -14,19 +14,28 @@
     "Programming Languages"
   ],
   "contributes": {
-    "languages": [{
-      "id": "turniptext",
-      "aliases": ["turnip_text", "turniptext"],
-      "extensions": [".ttext"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "turniptext",
-      "scopeName": "source.turniptext",
-      "path": "./syntaxes/turniptext.tmLanguage.json",
-      "embeddedLanguages": {
-        "meta.embedded.block.python": "python"
+    "languages": [
+      {
+        "id": "turniptext",
+        "aliases": [
+          "turnip_text",
+          "turniptext"
+        ],
+        "extensions": [
+          ".ttext"
+        ],
+        "configuration": "./language-configuration.json"
       }
-    }]
+    ],
+    "grammars": [
+      {
+        "language": "turniptext",
+        "scopeName": "source.turniptext",
+        "path": "./syntaxes/turniptext.tmLanguage.json",
+        "embeddedLanguages": {
+          "meta.embedded.block.python": "python"
+        }
+      }
+    ]
   }
 }

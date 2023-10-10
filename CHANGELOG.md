@@ -22,3 +22,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## [0.0.3] - 2023-07-03
 
 - Add rule for raw text highlighting
+
+## [0.0.4] - 2023-10-10
+
+- Make raw text be highlighted as raw text
