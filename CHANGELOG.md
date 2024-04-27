@@ -26,3 +26,13 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## [0.0.4] - 2023-10-10
 
 - Make raw text be highlighted as raw text
+
+## [0.0.5] - PENDING
+
+- Remove extraneous "bracket" definitions
+- Make raw scope formatting only end when hashes match
+- Autocomplete when opening raw scope for N &lt;= 3
+- Update code to support new dash syntax, that only ends when dashes match
+- Format eval-brackets with dashes as strings, so the dashes and the brackets have a consistent look
+- Format the first word of eval-brackets without dashes to look like function calls, because that's what they usually are.
+- TODO? en and em-dash highlighting

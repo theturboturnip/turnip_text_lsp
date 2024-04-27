@@ -3,8 +3,8 @@
 	"name": "turnip_text",
 	"patterns": [
 		{
-			"begin": "(?<![}#\\\\])#+{",
-			"end": "(?<!\\\\)}#+",
+			"begin": "(?<![}#\\\\])(#+){",
+			"end": "(?<!\\\\)}\\1",
 			"name": "string.unquoted.double.python"
 		},
 		{
@@ -16,6 +16,26 @@
 			},
 			"end": "\\n",
 			"name": "comment.line.number-sign.python"
+		},
+		{
+			"begin": "(?<!\\\\)(\\[(-+))",
+			"end": "(?<!\\\\)(\\2\\])",
+			"beginCaptures": {
+				"1": {
+					"name": "string.other"
+				}
+			},
+			"endCaptures": {
+				"1": {
+					"name": "string.other"
+				}
+			},
+			"name": "meta.embedded.block.python",
+			"patterns": [
+				{
+					"include": "source.python"
+				}
+			]
 		},
 		{
 			"begin": "(?<!\\\\)(\\[)",
@@ -32,6 +52,10 @@
 			},
 			"name": "meta.embedded.block.python",
 			"patterns": [
+				{
+					"name": "entity.name.function",
+					"match": "\\w+"
+				},
 				{
 					"include": "source.python"
 				}
