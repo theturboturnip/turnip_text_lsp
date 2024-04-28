@@ -35,4 +35,5 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - Update code to support new dash syntax, that only ends when dashes match
 - Format eval-brackets with dashes as strings, so the dashes and the brackets have a consistent look
 - Format the first word of eval-brackets without dashes to look like function calls, because that's what they usually are.
+- Support for escaped newlines in comments
 - TODO? en and em-dash highlighting
