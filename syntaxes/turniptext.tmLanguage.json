@@ -14,7 +14,7 @@
 					"name": "punctuation.definition.comment.python"
 				}
 			},
-			"end": "(?<!\\\\)\\n",
+			"end": "\\n",
 			"name": "comment.line.number-sign.python"
 		},
 		{
