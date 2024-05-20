@@ -18,6 +18,10 @@
 			"name": "comment.line.number-sign.python"
 		},
 		{
+			"match": "-{2,3}",
+			"name": "constant.character.escape"
+		},
+		{
 			"begin": "(?<!\\\\)(\\[(-+))",
 			"end": "(?<!\\\\)(\\2\\])",
 			"beginCaptures": {
