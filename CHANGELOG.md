@@ -6,6 +6,9 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
+### Added
+- Autocomplete for `#====`, `#----`, and `#~~~~` lines for sectioning a' la restructured text. 
+
 ## [0.1.0] - 2024-05-20
 
 ### Added
